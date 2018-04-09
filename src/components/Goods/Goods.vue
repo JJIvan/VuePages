@@ -81,7 +81,7 @@
 	</div>
 </template>
 <script>
-	import BScroll from 'better-scroll';
+	// import BScroll from 'better-scroll';
 	import Shopcart from 'components/Shopcart/Shopcart.vue';
 	import Cartcontrol from 'components/Cartcontrol/Cartcontrol.vue';
 
@@ -2573,7 +2573,7 @@
  		 },
  		 components:{
  		 	Shopcart,
- 		 	BScroll,
+ 		 	// BScroll,
  		 	Cartcontrol
  		 }
 
