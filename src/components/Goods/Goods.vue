@@ -81,7 +81,7 @@
 	</div>
 </template>
 <script>
-	// import BScroll from 'better-scroll';
+	 import BScroll from 'better-scroll';
 	import Shopcart from 'components/Shopcart/Shopcart.vue';
 	import Cartcontrol from 'components/Cartcontrol/Cartcontrol.vue';
 
@@ -2478,7 +2478,12 @@
 		created(){   //ajax
 
 		    var that =this;
+		    that.$nextTick( ()=>{
+						that.initScroll();
 
+						that.calculateHeight();
+
+					} ) 
 		   //  this.$axios.get('/api/goods')
 		   //      .then(function (response) {
 		   //        var dataSource = response.data;
@@ -2573,7 +2578,7 @@
  		 },
  		 components:{
  		 	Shopcart,
- 		 	// BScroll,
+ 		 	BScroll,
  		 	Cartcontrol
  		 }
 
